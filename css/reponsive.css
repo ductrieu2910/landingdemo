@@ -1,0 +1,29 @@
+@media (max-width:1595px){
+    .pageview{
+        background-image: url('../img/BG.png');
+        max-width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .img{
+        margin-top: 60px;
+        margin-bottom: 55px;
+        width: 50%;
+    }
+    .modal.active .rulemodal{
+        transition: all 300ms ease-in-out;
+        transform: translate(-50%,-50%) scale(1.4);
+        position: fixed;
+    }
+    .rulemodal pre {
+        text-align: left;
+        font-size: 16px;
+        height: 600px;
+        color: #5d2700;
+        font-weight: 600;
+        margin-left: -10px;
+        margin-top: 103px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+}
