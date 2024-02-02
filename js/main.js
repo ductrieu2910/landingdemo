@@ -1,4 +1,16 @@
-
+jQuery(document).ready(function(){
+    $('.carousel').flickity({
+        // options
+        imagesLoaded: true,
+        contain: true,
+        groupCells: 3,
+        freeScroll: true,
+        wrapAround: true,
+        imagesLoaded: true,
+        pageDots: false,
+        autoPlay: 2000,
+    })
+})
   //lấy phần tử có id là 'modal-1'
 var nmodal1 = document.getElementById('modal-1');
 var nmodal2 = document.getElementById('modal-2');
@@ -35,3 +47,6 @@ window.onclick = function(event){
         qua5.style.display = "none";
     }
 } 
+
+
+

@@ -7,7 +7,10 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/style.css">  
-        <link rel="stylesheet" href="css/reponsive.css">   
+        <link rel="stylesheet" href="css/reponsive.css">  
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css"> 
     </head>
     <body>
     <div class="pageview">
@@ -21,8 +24,7 @@
                     </div>
                     <div class="col-sm-1">
                        <img class="ig-1" src="img/home.png" alt="">  
-                    </div>
-                    <div class="col-sm-2">
+                    
                         <img class="ig-1" src="img/Nạp Thẻ.png" alt="">
                     </div>
                 </div>
@@ -35,17 +37,17 @@
         <section class ="nav">
             <div class="container-fluid">
                 <div class="navbar">
-                    <div>
+                    <div class="d-flex justify-content">
                         <img style="width:27% ;height:auto ;margin: 0%;" src="img/LỄ HỘI MUA SẮM MÙA NOEL 1.png" alt="">
                     </div>
-                    <div>
+                    <div class="d-flex justify-content">
                         <img style="width:44% ;height:auto ;" src="img/GIÁNG SINH AN LÀNH 2.png" alt="">
                     </div>                    
                     <div class="col-sm-3">
                         <a onclick ="document.getElementById('modal-1').style.display='block'"> <img class = "ig-2" src="img/Thể Lệ.png" alt=""></a>
                         <img class="ig-2" src="img/Tham Gia Ngay.png" alt="">
                     </div>
-                     <div class="">
+                     <div class="d-flex justify-content">
                         <img class="img" src="img/PHẦN THƯỞNG 1.png" alt="">
                     </div>
                 </div>
@@ -54,7 +56,7 @@
         <!--Nav bar end -->
         <!-- Content start -->
         <section class="sec3">
-            <div class="container">
+            <!-- <div class="container">
                     <div class="box-gift">
                         <div class="col-sm-5">
                             <a onclick="document.getElementById('qua1').style.display = 'block'">
@@ -77,14 +79,135 @@
                                 <img class="ig-3" src="img/qua5.png" alt=""></a>
                         </div>
                     </div>
+            </div> -->
+            <div class="frame" data-aos="fade-down">
+                <img src="img/khungqua.png" alt="">
+            </div>
+            <div class="gift">
+                <div class="gift-box" data-aos="flip-left" data-aos-delay="200" onclick="popup2()">
+                    <div id="gift-title">
+                        <h6>HỘP QUÀ 
+                            <br>ĐẤU GIÁ TOP 1</h6>
+                    </div>
+                    <img src="img/hop-qua.png" alt="">
+                    <div id="gift-content">
+                        <p>XEM NGAY</p>
+                    </div>
+                </div>
+                <div class="gift-box" data-aos="flip-left" data-aos-delay="300" onclick="popup2()">
+                    <div id="gift-title">
+                        <h6>HỘP QUÀ 
+                            <br>750.000 KC</h6>
+                    </div>
+                    <img src="img/hop-qua.png" alt="">
+                    <div id="gift-content">
+                        <p>XEM NGAY</p>
+                    </div>
+                </div>
+                <div class="gift-box" data-aos="flip-left" data-aos-delay="400" onclick="popup2()">
+                    <div id="gift-title">
+                        <h6>HỘP QUÀ 
+                            <br>300.000 KC</h6>
+                    </div>
+                    <img src="img/hop-qua.png" alt="">
+                    <div id="gift-content">
+                        <p>XEM NGAY</p>
+                    </div>
+                </div>
+                <div class="gift-box" data-aos="flip-left" data-aos-delay="500" onclick="popup2()">
+                    <div id="gift-title">
+                        <h6>HỘP QUÀ 
+                            <br>100.000 KC</h6>
+                    </div>
+                    <img src="img/hop-qua.png" alt="">
+                    <div id="gift-content">
+                        <p>XEM NGAY</p>
+                    </div>
+                </div>
+                <div class="gift-box" data-aos="flip-left" data-aos-delay="600" onclick="popup2()">
+                    <div id="gift-title">
+                        <h6>HỘP QUÀ 
+                            <br>50.000 KC</h6>
+                    </div>
+                    <img src="img/hop-qua.png" alt="">
+                    <div id="gift-content">
+                        <p>XEM NGAY</p>
+                    </div>
+                </div>
             </div>
         </section>
-                    <div class="ct-2">
-                        <img class="ig-4" src="img/bxh.png" alt="">
-                    </div>        
+        <!-- MOBI -->
+        <section class="sec3-mobi">
+        <div class="frame-mobi" data-aos="fade-down">
+            <img src="img/khungqua.png" alt="">
+        </div>
+        <div class="carousel">
+            <div class="carousel-item" data-aos="flip-left" data-aos-delay="200" onclick="popup2()">
+                <div id="gift-title-mobi">
+                    <h6>HỘP QUÀ 
+                        <br>ĐẤU GIÁ TOP 1</h6>  
+                </div>
+                <img src="img/hop-qua.png" alt="">
+                <div id="gift-content-mobi">
+                    <p>XEM NGAY</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-aos="flip-left" data-aos-delay="300" onclick="popup2()">
+                <div id="gift-title-mobi">
+                    <h6>HỘP QUÀ 
+                        <br>750.000 KC</h6>
+                </div>
+                <img src="img/hop-qua.png" alt="">
+                <div id="gift-content-mobi">
+                    <p>XEM NGAY</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-aos="flip-left" data-aos-delay="400" onclick="popup2()">
+                <div id="gift-title-mobi">
+                    <h6>HỘP QUÀ 
+                        <br>300.000 KC</h6>
+                </div>
+                <img src="img/hop-qua.png" alt="">
+                <div id="gift-content-mobi">
+                    <p>XEM NGAY</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-aos="flip-left" data-aos-delay="500" onclick="popup2()">
+                <div id="gift-title-mobi">
+                    <h6>HỘP QUÀ 
+                        <br>100.000 KC</h6>
+                </div>
+                <img src="img/hop-qua.png" alt="">
+                <div id="gift-content-mobi">
+                    <p>XEM NGAY</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-aos="flip-left" data-aos-delay="600" onclick="popup2()">
+                <div id="gift-title-mobi">
+                    <h6>HỘP QUÀ 
+                        <br>50.000 KC</h6>
+                </div>
+                <img src="img/hop-qua.png" alt="">
+                <div id="gift-content-mobi">
+                    <p>XEM NGAY</p>
                 </div>
             </div>
         </div>
+    </section>
+        <section class="">
+            <!-- <div class="ct-2">
+                <img class="ig-4" src="img/bxh.png" alt="">
+            </div>  -->
+            <div class="ranking">
+                <img src="img/bxh.png" alt="bang xep hang" >
+                <div id="ranking-content">
+                    <p id="rank"></p>
+                    <p id="name">Nhân vật</p>
+                    <p id="server">Máy chủ</p>
+                    <p id="point">1000000</p>
+                </div>
+            </div>
+        </section>       
         <!-- Content end -->
         <!-- footer start -->
         <section class="footer">
@@ -97,21 +220,24 @@
                         <img class="ig-5" src="img/logof (2).png" alt="">
                     </div>
                     <div class="contact-info">
-                        <p class="tx">Công Ty Cổ Phần ADNX</p>
+                        <p class="tx">Công Ty Cổ Phần ADNX</p></br>
                         <p class="tx">Giấy phép cung cấp dịch vụ trò chơi điện tử G1 trên mạng số: 224/GP-BTTTT do Bộ Thông tin và Truyền thông cấp ngày 22/04/2021 </p>
+                        </br>
                         <p class="tx">Quyết định phê duyệt nội dung kịch bản trò chơi điện tử G1 trên mạng số: 1963/QĐ-BTTTT do Bộ Thông tin và Truyền thông cấp ngày 28/10/2022 </p>
+                        </br>
                         <p class="tx">Copyright © 2022 ADNX</p>
+                        </br>
                     </div>
-                    
                 </div>      
             </div>
         </section>
+    </div> 
         <!-- footer end -->
         <div class="modal active" id="modal-1" style="display: none;">
             <div class="modal2" id="modal-2"></div>
             <div class=rulesmodal>
                 <pre class="text-popup">
-                Chào mừng hiệp sĩ đến với lễ hội mua sắm mùa noel </span><span>
+                Chào mừng hiệp sĩ đến với lễ hội mua sắm mùa noel</span><span>
                 Thời gian tham gia: 25.12.2023 - 08.01.2024</span>
                 </pre>
             </div>
@@ -180,10 +306,14 @@
                     + 1 lần đổi class không bị giảm trừ số lần reset
                 </pre>
             </div>
-        </div>
-        
-    </div>
-    <script src="js/main.js"></script>
-    </body>
+        </div> 
     
+    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js" integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    </body>
 </html>
