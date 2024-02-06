@@ -9,10 +9,23 @@
         <link rel="stylesheet" href="css/style.css">  
         <link rel="stylesheet" href="css/reponsive.css">  
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        
+        <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
         <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css"> 
     </head>
     <body>
+        <div class="snowflakes" aria-hidden="true">
+            <div class="snowflake">❅</div>
+            <div class="snowflake">❅</div>
+            <div class="snowflake">❆</div>
+            <div class="snowflake">❄</div>
+            <div class="snowflake">❅</div>
+            <div class="snowflake">❆</div>
+            <div class="snowflake">❄</div>
+            <div class="snowflake">❅</div>
+            <div class="snowflake">❆</div>
+            <div class="snowflake">❄</div>
+        </div>   
     <div class="pageview">
         <!--top bar start -->
         <section class="sec1">
@@ -44,8 +57,8 @@
                         <img style="width:44% ;height:auto ;" src="img/GIÁNG SINH AN LÀNH 2.png" alt="">
                     </div>                    
                     <div class="col-sm-3">
-                        <a onclick ="document.getElementById('modal-1').style.display='block'"> <img class = "ig-2" src="img/Thể Lệ.png" alt=""></a>
-                        <img class="ig-2" src="img/Tham Gia Ngay.png" alt="">
+                        <a onclick ="document.getElementById('modal-1').style.display='block'"> <img class = "ig-2" src="img/Thể Lệ.png" alt=""  data-aos="fade-right"></a>
+                        <img class="ig-2" src="img/Tham Gia Ngay.png" alt="" data-aos="fade-left"> 
                     </div>
                      <div class="d-flex justify-content">
                         <img class="img" src="img/PHẦN THƯỞNG 1.png" alt="">
@@ -84,17 +97,19 @@
                 <img src="img/khungqua.png" alt="">
             </div>
             <div class="gift">
-                <div class="gift-box" data-aos="flip-left" data-aos-delay="200" onclick="popup2()">
+                <div class="gift-box" data-aos="flip-left" data-aos-delay="200" onclick="document.getElementById('qua1').style.display = 'block'">
                     <div id="gift-title">
                         <h6>HỘP QUÀ 
                             <br>ĐẤU GIÁ TOP 1</h6>
+
+
                     </div>
                     <img src="img/hop-qua.png" alt="">
                     <div id="gift-content">
                         <p>XEM NGAY</p>
                     </div>
                 </div>
-                <div class="gift-box" data-aos="flip-left" data-aos-delay="300" onclick="popup2()">
+                <div class="gift-box" data-aos="flip-left" data-aos-delay="300" onclick="document.getElementById('qua2').style.display = 'block'">
                     <div id="gift-title">
                         <h6>HỘP QUÀ 
                             <br>750.000 KC</h6>
@@ -104,7 +119,7 @@
                         <p>XEM NGAY</p>
                     </div>
                 </div>
-                <div class="gift-box" data-aos="flip-left" data-aos-delay="400" onclick="popup2()">
+                <div class="gift-box" data-aos="flip-left" data-aos-delay="400" onclick="document.getElementById('qua2').style.display = 'block'">
                     <div id="gift-title">
                         <h6>HỘP QUÀ 
                             <br>300.000 KC</h6>
@@ -114,7 +129,7 @@
                         <p>XEM NGAY</p>
                     </div>
                 </div>
-                <div class="gift-box" data-aos="flip-left" data-aos-delay="500" onclick="popup2()">
+                <div class="gift-box" data-aos="flip-left" data-aos-delay="500" onclick="document.getElementById('qua3').style.display = 'block'">
                     <div id="gift-title">
                         <h6>HỘP QUÀ 
                             <br>100.000 KC</h6>
@@ -124,7 +139,7 @@
                         <p>XEM NGAY</p>
                     </div>
                 </div>
-                <div class="gift-box" data-aos="flip-left" data-aos-delay="600" onclick="popup2()">
+                <div class="gift-box" data-aos="flip-left" data-aos-delay="600" onclick="document.getElementById('qua4').style.display = 'block'">
                     <div id="gift-title">
                         <h6>HỘP QUÀ 
                             <br>50.000 KC</h6>
@@ -137,7 +152,7 @@
             </div>
         </section>
         <!-- MOBI -->
-        <section class="sec3-mobi">
+        <!-- <section class="sec3-mobi">
         <div class="frame-mobi" data-aos="fade-down">
             <img src="img/khungqua.png" alt="">
         </div>
@@ -193,7 +208,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
         <section class="">
             <!-- <div class="ct-2">
                 <img class="ig-4" src="img/bxh.png" alt="">
